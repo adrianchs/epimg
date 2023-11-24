@@ -1,28 +1,51 @@
-var nombre = document.getElementById("usuario");
-var password = document.getElementById("pass");
-var error = document.getElementById("error");
-error.style.color="red";
+function showRegisterForm() {
+    document.getElementById("login-container").style.display = "none";
+    document.getElementById("register-container").style.display = "block";
+}
 
-function enviarFormulario(){
-    console.log('Enviando formulario...');
+function showLoginForm() {
+    document.getElementById("login-container").style.display = "block";
+    document.getElementById("register-container").style.display = "none";
+}
 
-    var mensajesError = [];
+function login() {
+    // Implementar lógica de inicio de sesión aquí
+    if(username.value === null || username.value === ""){
 
-    if(nombre.value === null || nombre.value === ""){
-
-        mensajesError.push('ingresa el nombre');
+        alert('ingresa el usuario');
 
     }else if (password.value === null || password.value === "") {
 
-        mensajesError.push('ingresa la contraseña');
+        alert('ingresa la contraseña');
         
     }
     else {
-        mensajesError.push('formulario enviado');
+        alert("¡Inicio de sesión exitoso!");
     }
+    
+}
 
-    error.innerHTML = mensajesError.join(", ");
+function register() {
+    // Implementar lógica de registro de usuario aquí
+    if(new_username.value === null || new_username.value === ""){
 
-    return false;
+        alert('ingresa el usuario');
+
+    }else if (new_password.value === null || new_password.value === "") {
+
+        alert('ingresa la contraseña');
+        
+    }else if (tel.value === null || tel.value === "") {
+
+    alert('ingresa tu número');
+    
+    }else if (email.value === null || email.value === "") {
+
+    alert('ingresa tu correo');
+    
+    }
+    else {
+        alert("¡Registro exitoso!");
+    }
     
 }

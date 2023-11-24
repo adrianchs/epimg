@@ -1,69 +1,52 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;500;600;700;800 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-body{
-    background-image: url(../img/f.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
- }
- 
- form {
+ body {
+   background-image: url(../img/f.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   margin: 0;
+   padding: 0;
    display: flex;
-   flex-direction: column;
    align-items: center;
+   justify-content: center;
+   height: 100vh;
 }
 
- table 
- {
- border: 3px solid #12bcff;
- background-color: #e2e6e7d2;
- }
-
- h1 {
-    font-size: 50px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-family: 'Bebas Neue', sans-serif;
-    color: #ffffff;
-    margin-bottom: 15px;
-
- }
- 
- input[type=text], input[type=email], input[type=password]
- {
- width: 100%;
- padding: 8px 20px;
- border: 2px solid #ccc;
- box-sizing: border-box;
- }
- 
- label
- {
- font-size: 14px;
- font-weight: bold;
- font-family: arial;
- }
- 
- input[type=submit] {
-    background-color: #040708;
-    color:white;
-    padding: 8px 10px;
-    margin: 8px 0px;
-    border: solid;
-    cursor: pointer;
-    width: 40%;
- }
-
- hr {
-    border: .5px solid #12bcff;
-    width: 90%;
+#login-container, #register-container {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   text-align: center;
 }
 
- a {
-    float: right;
-    font-size: 20px;
-    text-transform:none;
-    font-family: 'Bebas Neue', sans-serif;
-    color: #000000;
-    margin-bottom: 15px;
- }
+.btn-1 {
+   display: inline-block;
+   padding: 2px 4px;
+   background-color: #ffffff;
+   color: #000000;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 20px;
+   font-family: 'Bebas Neue', sans-serif;
+   margin-top: 10px;
+   border: 2px solid #bdbdbd;
+}
+
+.btn-1:hover {
+   border: 2px solid #000000;
+}
+
+a {
+   color: #007bff;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+a:hover {
+   text-decoration: underline;
+}

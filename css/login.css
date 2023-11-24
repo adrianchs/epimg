@@ -1,0 +1,69 @@
+
+body{
+    background-image: url(../img/f.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+ }
+ 
+ form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+ table 
+ {
+ border: 3px solid #12bcff;
+ background-color: #e2e6e7d2;
+ }
+
+ h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff;
+    margin-bottom: 15px;
+
+ }
+ 
+ input[type=text], input[type=email], input[type=password]
+ {
+ width: 100%;
+ padding: 8px 20px;
+ border: 2px solid #ccc;
+ box-sizing: border-box;
+ }
+ 
+ label
+ {
+ font-size: 14px;
+ font-weight: bold;
+ font-family: arial;
+ }
+ 
+ input[type=submit] {
+    background-color: #040708;
+    color:white;
+    padding: 8px 10px;
+    margin: 8px 0px;
+    border: solid;
+    cursor: pointer;
+    width: 40%;
+ }
+
+ hr {
+    border: .5px solid #12bcff;
+    width: 90%;
+}
+
+ a {
+    float: right;
+    font-size: 20px;
+    text-transform:none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000;
+    margin-bottom: 15px;
+ }

@@ -1,0 +1,36 @@
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>System login</title>
+   <link rel="stylesheet" href="../css/login.css">
+</head>
+<center>
+   <body>
+   <form method="post">
+<table>
+	<marquee behavior="alternate">
+   <br><h1>SISTEMA DE REGISTRO</h1></p><br>
+   </marquee>
+   
+   <td><label>Usuario</label></td> </tr>
+   <tr><td><input type="text" name="usuario" id="usuario" placeholder="&#128270"></td></tr>
+   <tr><td><label>Password</label></td></tr>
+   <tr><td><input type="password" name="password" id="pass" placeholder="&#x1f511">
+   </td></tr>
+
+   <tr><td><input type="submit" onclick="return enviarFormulario()"  value="Enviar" class="btn-1"></td></tr>
+   <!--<tr><td><input type="submit" value="Continuar"></td></tr>-->
+   <tr><td><hr></td></tr>
+   <tr><td><a href="#">crear una cuenta</a></td></tr>
+</table>
+   </form> 
+   <br>
+   <div id="error"></div>
+        <script src="../js/validar-login.js"></script>
+</body>
+
+</center>
+
+</html>

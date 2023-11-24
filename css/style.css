@@ -1,69 +1,71 @@
-h1 {
-    justify-content: left;
-    color: red;
-    font-style: italic;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;500;600;700;800 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    
+  }
+  
+  main {
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: #141313;
-}
-
-#menu ul {
-    /*list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    width: 200px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11pt;*/
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-#menu ul li {
-    list-style: none;
-    position: relative;
-}
-#menu ul li a {
-    /*background-color: rgb(64, 68, 64);*/
-    position: relative;
-    text-decoration: none;
-    font-size: 2em;
-    line-height: 1em;
-    letter-spacing: 2px;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(235, 229, 229, 0.5);
-}
-#menu ul li a::before {
-    /*color: rgb(27, 67, 248);
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
-    padding: 10px 10px 10px 20px;*/
-    content: attr(data-text);
-    position: absolute;
-    color: var(--clr);
-    width: 0px;
-    overflow: hidden;
-    transition: 1s;
-    border-right: 8px solid var(--clr);
-    -webkit-text-stroke: 1px var(--clr);
-}
-#menu ul li a:hover::before {
-    /*background: #000;
-    border-left: 10px solid #333;
-    color: #fff;
-    border-left: 10px solid #666*/
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 16px;
+    max-width: 1000px;
+    margin: 5 auto;
+  }
+  
+  img {
     width: 100%;
-    filter: drop-shadow(7px -12px 50px var(--clr));
-}
+    height: auto;
+    border-radius: 8px;
+  }
 
+  .bton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 25px 0;
+    border: 2px solid #bdbdbd;
+    }
+
+    .btn-1:hover {
+    border: 2px solid #000000;
+    }
+
+
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+  
